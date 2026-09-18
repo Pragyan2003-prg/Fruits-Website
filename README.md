@@ -30,23 +30,23 @@ It provides a clean and user-friendly interface to explore products, view the ga
 
 ### Home Page
 
-![Home Page](screenshots/Home.png)
+![Home Page](Screenshots/Home.png)
 
 ### Home Page 2
 
-![Home Page](screenshots/Home_2.png)
+![Home Page](Screenshots/Home_2.png)
 
 ### Products / Gallery
 
-![Product](screenshots/Home_3.png)
+![Product](Screenshots/Home_3.png)
 
 ### Contact Page
 
-![Contact](screenshots/Contact.png)
+![Contact](Screenshots/Contact.png)
 
 ### Footer
 
-![Footer](screenshots/Footer.png)
+![Footer](Screenshots/Footer.png)
 
 
 

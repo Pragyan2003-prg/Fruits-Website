@@ -1,0 +1,31 @@
+let nav = document.querySelector(".navbar");
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 50) {
+    nav.classList.add("header-scolled");
+  } else {
+    nav.classList.remove("header-scolled");
+  }
+};
+
+//nav hide
+
+let navBar = document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function (e) {
+  e.addEventListener("click", function () {
+    navCollapse.classList.remove("shoow");
+  });
+});
+
+
+
+
+
+           
+
+            
+
+
+            
+
+           

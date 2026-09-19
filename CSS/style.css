@@ -464,11 +464,48 @@ section {
 .testimonial_section .carousel-indicators {
   bottom: -6rem;
 }
-.testimonial_section .carousel-indicators button {
-  background-color: var(--dark-color);
-  width: 1.2rem;
-  height: 1.2rem;
+/* Attractive testimonial carousel arrows */
+/* Light testimonial carousel arrow buttons */
+.testimonial_section .carousel-control-prev,
+.testimonial_section .carousel-control-next {
+  top: 50%;
+  bottom: auto;
+  width: 4.5rem;
+  height: 4.5rem;
+  opacity: 1;
+  transform: translateY(-50%);
   border-radius: 50%;
+
+  /* Light and slightly transparent */
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
+
+  transition: all 0.3s ease;
+}
+
+.testimonial_section .carousel-control-prev {
+  left: 1.5rem;
+}
+
+.testimonial_section .carousel-control-next {
+  right: 1.5rem;
+}
+
+/* Darker arrow icon so it remains visible inside the light button */
+.testimonial_section .carousel-control-prev-icon,
+.testimonial_section .carousel-control-next-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-size: 100% 100%;
+  filter: brightness(0) opacity(0.65);
+}
+
+/* Hover effect */
+.testimonial_section .carousel-control-prev:hover,
+.testimonial_section .carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-50%) scale(1.08);
 }
 .testimonial_section .card {
   background: url("../images/testimonial/testimonial-bg.png");
@@ -623,18 +660,18 @@ section {
 
 /* contact detail */
 .contact_section .contact-form {
-    background-color: #899475;
-    padding: 5rem;
-    box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 4%);
+  background-color: #899475;
+  padding: 5rem;
+  box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 4%);
 }
-.contact_section .contact-form .form-control:focus{
+.contact_section .contact-form .form-control:focus {
   outline: none;
   box-shadow: none;
 }
-.contact_section .contact-form .form-control::placeholder{
+.contact_section .contact-form .form-control::placeholder {
   color: var(--primary-text);
 }
-.contact_section .contact-form .form-control{
+.contact_section .contact-form .form-control {
   padding: 1rem 1.5rem;
   border-radius: 0rem;
   border: 0.1rem solid var(--secondary-color);
@@ -647,13 +684,13 @@ section {
 .contact_section .contact-form {
   min-height: 15rem;
 }
-.contact_section .contact-form .info-box li{
-   position: relative;
-   padding-left: 7rem;
-   padding-bottom: 3.5rem;
-   margin-bottom: 2.9rem;
+.contact_section .contact-form .info-box li {
+  position: relative;
+  padding-left: 7rem;
+  padding-bottom: 3.5rem;
+  margin-bottom: 2.9rem;
 }
-.contact_section .contact-form .info-box li i{
+.contact_section .contact-form .info-box li i {
   position: absolute;
   left: 0;
   top: 1.5rem;
@@ -661,10 +698,10 @@ section {
   line-height: 4.5rem;
   color: var(--primary-text);
 }
-.contact_section .contact-form .info-box li p{
+.contact_section .contact-form .info-box li p {
   color: var(--primary-text);
 }
-.contact_section .contact-form .info-box li a{
+.contact_section .contact-form .info-box li a {
   color: var(--dark-color);
   font-size: 2.5rem;
   font-weight: 400;
